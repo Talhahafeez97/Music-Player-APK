@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="100dp"
-    android:background="@color/colorPrimary">
+    android:background="#020729">
 
     <LinearLayout
         android:id="@+id/ll_player_controls"
@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:backgroundTint="@color/colorPrimary"
+            android:backgroundTint="#041959"
             android:src="@drawable/undo_icon" />
 
         <ImageButton
@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:backgroundTint="@color/colorPrimary"
+            android:backgroundTint="#041959"
             android:src="@drawable/previous_icon" />
 
         <ImageButton
@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:backgroundTint="@color/colorPrimary"
+            android:backgroundTint="#041959"
             android:src="@drawable/play_icon" />
 
         <ImageButton
@@ -42,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:backgroundTint="@color/colorPrimary"
+            android:backgroundTint="#041959"
             android:src="@drawable/next_icon" />
 
         <ImageButton
@@ -50,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:backgroundTint="@color/colorPrimary"
+            android:backgroundTint="#041959"
             android:src="@drawable/ic_settings" />
     </LinearLayout>
 

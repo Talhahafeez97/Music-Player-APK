@@ -1,27 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="250dp"
     android:layout_centerHorizontal="true"
     android:background="@drawable/header_background"
     android:fitsSystemWindows="true"
     android:gravity="center">
 
     <ImageView
-        android:layout_marginStart="10dp"
         android:id="@+id/img_icon"
+
         android:layout_width="120dp"
         android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
         android:focusable="true"
-        android:src="@drawable/headset_icon" />
+        android:src="@drawable/ic_music"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_icon"
+        android:layout_marginTop="4dp"
+        android:text="The Alpha Music player"
+        android:textAlignment="center"
+        android:textColor="#ABAECF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/img_icon"
-        android:text="@string/title"
-        android:textColor="@color/text_color"
-        android:textSize="30sp"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="16dp"
+        android:text="Created by Hamza,Tehreem ,Talha,Ahsan,Hadi"
+        android:textAlignment="center"
+        android:textColor="#B0B6D3"
+        android:textSize="14sp"
         android:textStyle="bold" />
 
 </RelativeLayout>

@@ -5,6 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0C0C0C"
     tools:context=".Activity.MainActivity">
 
     <RelativeLayout
@@ -16,8 +17,9 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+            android:background="#040B2E"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:titleTextColor="#FFFFFF" />
 
         <LinearLayout
             android:id="@+id/ll_include_controls"
@@ -25,7 +27,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/toolbar">
 
-            <include layout="@layout/player_layout" />
+            <include
+                layout="@layout/player_layout"
+                android:background="#FFFFFF" />
 
         </LinearLayout>
 
@@ -34,14 +38,15 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:layout_below="@id/ll_include_controls"
-            android:background="@color/colorPrimary">
+            android:background="#09143A">
 
             <android.support.design.widget.TabLayout
                 android:id="@+id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#040B2E"
                 android:elevation="10dp"
-                app:tabBackground="@color/colorPrimary"
+                app:tabBackground="@color/colorAccent"
                 app:tabGravity="fill"
                 app:tabIndicatorColor="@color/colorPrimary"
                 app:tabMode="fixed"
@@ -61,13 +66,13 @@
             android:id="@+id/btn_refresh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"
             android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
             android:focusable="true"
             android:src="@drawable/refresh_icon"
-            app:backgroundTint="@color/colorPrimary"
+            app:backgroundTint="@color/colorAccent"
             app:layout_anchor="@id/songs_viewpager" />
 
     </RelativeLayout>
